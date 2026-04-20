@@ -35,7 +35,6 @@ Run the following from the `/CLANGNEURALNET/` directory:
 cmake --build .\Build\
 ```
 or:
-
+```terminal
 gcc main.c functions.c structs.c -o a.(exe or out). 
 
-Currently Windows only — outputs `a.exe` which runs `main.c`.
