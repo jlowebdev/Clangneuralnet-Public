@@ -28,10 +28,14 @@ Partially trains N networks and prunes them before convergence. The intent was t
 
 ## How to Build
 
+Use MinGw or GCC - Need a compiler with support for VLAs.
 Run the following from the `/CLANGNEURALNET/` directory:
 
 ```bash
 cmake --build .\Build\
 ```
+or:
+
+gcc main.c functions.c structs.c -o a.(exe or out). 
 
 Currently Windows only — outputs `a.exe` which runs `main.c`.
