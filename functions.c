@@ -142,44 +142,6 @@ struct set * create_subset (int firstdim, int seconddim, float data[firstdim][se
     return set;
 };
 
-// struct set * create_subset_batch (int firstdim, int seconddim, float data[firstdim][seconddim], int labels[firstdim], int outputs[2]){ // takes the uncertain points and creates a new subset where a new perceptron will try to classify the best it can
-// // Must have the associated training labels to go along with it 
-// // Just allocates the set from data to the set data type
-//     struct set * set = calloc(1, sizeof(struct set));
-//     set->firstdim = firstdim;
-//     set->coords = malloc(set->firstdim * sizeof(float *));
-//     set->labels = calloc(set->firstdim, sizeof(int));
-//     set->outputs[0] = ouputs[0];
-//     set->outputs[1] = outputs[1];
-//     for(int i = 0; i<firstdim; i++){
-//         set->coords[i] = calloc(2, sizeof(float));
-//         set->coords[i][0] = data[i][0];
-//         set->coords[i][1] = data[i][1];
-//         set->labels[i] = labels[i];
-//     }
-//     return set;
-// };
-
-// struct set_n * create_subset_n (int n_dims, int number_of_points,float data[n_dims][number_of_points], int labels[n_dims][number_of_points]){
-//     struct set_n * base = calloc(n_dims, sizeof(struct set_n));
-//     //Number of points is per dimension, these dimensions will be held in a 2d array of set_n
-//     //
-//     for (int i = 0; i<n_dims; i++){
-//         base[i]->coords = calloc(number_of_points, sizeof(float));
-//         base[i]->labels = calloc(number_of_points, sizeof(int));
-//         base[i]->n_dims = n_dims;
-//         base[i]->dim = i;
-//         for (int j = 0; j<number_of_points; j++){
-//             base[i]->coords[j] = data[i][j];
-//             base[i]->labels[j] = labels[i][j];
-            
-//         }
-//     }
-//     return base;
-    
-// }
-
-
 void find_perc_bounds(struct perc * ada, struct set * set){
 // For any subset find the max and min x and y values that its applicable for then set the proper bounds in the perc data struct
     float miny = FLT_MAX;
