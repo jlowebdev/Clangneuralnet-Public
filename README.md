@@ -4,7 +4,7 @@ CLANGNEURALNET is a C machine learning library and passion project built to expl
 
 The library expanded over time to include experimental implementations of ideas I had regarding perceptrons and MLPs. Please feel free to leave comments or message me regarding design decisions, suggestions, or any errors I may have made. Feel free to experiment with the library and combine things I may not have thought of.
 
-For usage of each function please see [reference.md](reference.md).
+For usage of each function, please see [reference.md](reference.md).
 
 If you wish to contact me: jack.lenox@trojans.dsu.edu — I can't promise I can answer everything but I'll do my best.
 
@@ -14,9 +14,9 @@ If you wish to contact me: jack.lenox@trojans.dsu.edu — I can't promise I can 
 
 ### Spatially Conscious Perceptron Chaining
 
-Training begins on a single perceptron which trains until it classifies all points or stagnates. Any remaining misclassified points spawn a child perceptron whose spatial view is constrained to the region where failures occurred — typically around difficult decision boundaries.
+Training begins on a single perceptron, which trains until it classifies all points or stagnates. Any remaining misclassified points spawn a child perceptron whose spatial view is constrained to the region where failures occurred — typically around difficult decision boundaries.
 <img width="597" height="662" alt="Screenshot 2026-04-10 235338" src="https://github.com/user-attachments/assets/f8b050e1-8dad-4ded-9e14-62d098579166" />
-*Graphic representation of Spatially Concious Perceptron Chaining
+*Graphic representation of Spatially Conscious Perceptron Chaining
 
 
 > **Note:** This functions as intended across a variety of 2D datasets of varying complexity. A test implementation using a small XOR dataset is included in `main.c` along with a graph of one result. LabPlot visualization integration is planned.
