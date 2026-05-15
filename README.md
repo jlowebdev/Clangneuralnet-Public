@@ -25,7 +25,7 @@ Training begins on a single perceptron which trains until it classifies all poin
 
 Partially trains N networks and prunes them before convergence. The intent was to save computation and highlight important connections faster than full training.
 
-> **Note:** Didn't perform as intended. Further investigation planned through statistical analysis rather than intuition alone.
+> **Note:** Didn't perform as intended.
 
 ---
 
